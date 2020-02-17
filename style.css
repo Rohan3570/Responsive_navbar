@@ -134,6 +134,14 @@ ul li a:hover i:nth-child(2){
         .shopping-bag{
                 display: block !important;
         }
+
+        .social-icons{
+                margin-top: 50px;
+        }
+
+        .social-icons a{
+                font-size: 14px !important;
+        }
         
 }
 
