@@ -18,7 +18,6 @@
 </head>
 <body>
         <header class="bg-blue">
-
                         <div class="row w-100 justify-content-around align-items-center">
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                         <a href="#"><img class="brand" src="/mariner-logo.png" alt="logo"></a>
@@ -29,8 +28,8 @@
 
                                         <button class="btn btn-lg p-2" id="collapsebtn"><i id="menu-icon" class="fas fa-bars text-white"></i></button>
 
-                                        <div id="mycollapse">
-                                                <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center" id="navbar">
+                                        <div id="mycollapse" class="d-flex">
+                                                <ul class="navbar-nav d-flex flex-row justify-content-start align-items-center" id="navbar">
 
                                                         <button class="btn btn-lg p-2" id="collapsebtn2"><i id="menu-icon" class="fas fa-times text-white"></i></button>
 
@@ -59,23 +58,33 @@
                                                                 <a class="nav-link text-white" href="#">CONSIGN</a>
                                                         </li>
                                                         <li class="nav-item p-2">
-                                                                <a class="nav-link text-white" href="#">CONTACT</a>
+                                                                <a class="nav-link text-white contact" href="#">CONTACT<i class="fas fa-chevron-down ml-1"></i></a>
+                                                                <ul class="list-unstyled sub-menu p-2">
+                                                                        <li>item 1</li>
+                                                                        <li>item 2</li>
+                                                                        <li>item 3</li>
+                                                                        <li>item 4</li>
+                                                                </ul>
                                                         </li>
 
-                                                        <li class="nav-item social-icons ml-2 p-2 d-flex flex-row">
-                                                                <a target="_blank" href="#" class="p-2 d-flex flex-column flex-nowrap  icon-height">
-                                                                        <i class="fab fa-twitter text-white"></i> 
-                                                                        <i class="fab fa-twitter text-white"></i>
-                                                                        
-                                                                </a>
-
-                                                                <a target="_blank" href="#"  class="p-2 d-flex flex-column flex-nowrap icon-height">
-                                                                        <i class="fab fa-facebook-f text-white"></i>
-                                                                        <i class="fab fa-facebook-f text-white"></i>
-                                                                        
-                                                                </a>
+                                                        <li class="nav-item p-2">
+                                                                <ul class="social-icons ml-3">
+                                                                        <li class="d-flex mb-1">
+                                                                                <a target="_blank" href="#" class="p-2" style="height: 21px;">
+                                                                                        <i class="fab fa-twitter text-white"></i> 
+                                                                                        <i class="fab fa-twitter text-white"></i>
+                                                                                        
+                                                                                </a>
+                
+                                                                                <a target="_blank" href="#"  class="p-2" style="height: 21px;">
+                                                                                        <i class="fab fa-facebook-f text-white"></i>
+                                                                                        <i class="fab fa-facebook-f text-white"></i>
+                                                                                        
+                                                                                </a>
+                                                                        </li>
+                                                                </ul>
                                                         </li>
-                                                </ul>  
+                                                </ul> 
                                         </div>
                                 </div>
                         </div>
@@ -84,6 +93,7 @@
         <section class="bg-light">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque expedita totam voluptatibus praesentium molestias debitis blanditiis optio soluta nesciunt, alias velit nihil saepe. Maiores laborum minima accusantium voluptates quibusdam illo explicabo odit ipsum quos, dolorem necessitatibus dolores nihil nemo molestias, labore aut reprehenderit odio unde voluptas vel natus. Optio.</p>
         </section>
+        <div class="overlay"></div>
 
 <script src="./main.js"></script>
 
