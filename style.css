@@ -6,6 +6,30 @@
 
 body{
         background-color: black !important;
+        transition: all 0.7s cubic-bezier(0.645, 0.045, 0.335, 1);
+        overflow-x: hidden;
+}
+
+.margin-right{
+        margin-right: 280px;
+}
+
+/* .overlay{
+        position: fixed; 
+        display: block; 
+        width: 100%; 
+        height: 100%; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5) !important;
+        z-index: 2;
+} */
+
+header{
+        background-image: url(https://www.marinerauctions.com/wp-content/uploads/2018/09/marinerheader.jpg) !important;
+        
 }
 
 .bg-blue{
@@ -23,7 +47,6 @@ body{
         font-size: 14px;
         line-height: 14px;
         font-weight: 700;
-        height: 21px;
         overflow: hidden;
 }
 
@@ -39,7 +62,7 @@ body{
         color: #27CCC0!important;
 }
 
-/* ul li a i{
+ul li a i{
         transition: 0.5s;
 }
 
@@ -48,10 +71,13 @@ ul li a:hover i:nth-child(1){
 }
 
 ul li a:hover i:nth-child(2){
-        transform: translateY(-20px);
+        transform: translateY(-14px);
         color: #27CCC0!important;
-} */
+}
 
+.icon-height{
+        height: 22px;
+}
 
 #collapsebtn{
         z-index: 2;
@@ -65,18 +91,25 @@ ul li a:hover i:nth-child(2){
         #mycollapse{
                 position: fixed;
                 top: 0;
-                right: -330px;
+                right: -300px;
                 width: 300px;
                 height: auto;
                 padding : 20px;
-                background-color: #007bff;
-                z-index: 1;
-                transition: all 0.8s ease-in-out;
+                background-color: #033285;
+                z-index: 4;
+                transition: all 0.7s cubic-bezier(0.645, 0.045, 0.335, 1)
         }
 
         .show-menu{
                 right: -20px !important;
                 box-shadow: 3px 3px 100px 20px rgb(0, 0, 0);
+        }
+
+        #collapsebtn2{
+                font-size: 24px;
+                position: absolute;
+                top: 15px;
+                right: 30px;
         }
 
         .brand{
@@ -86,7 +119,7 @@ ul li a:hover i:nth-child(2){
 
         #navbar{
                 flex-direction: column !important;
-                text-align: left;
+                align-items: flex-start !important;
         }
 
         .nav-link{
@@ -96,7 +129,6 @@ ul li a:hover i:nth-child(2){
         .navbar-nav li a{
                 font-size: 20px;
                 line-height: 30px;
-                height: 24px;
         }
 
         .shopping-bag{
@@ -112,11 +144,11 @@ ul li a:hover i:nth-child(2){
         }
 
         #mycollapse{
-                right: -400px;
+                right: -300px;
         }
 
         .show-menu{
-                right: -100px !important;
+                right: -10px !important;
         }
 }
 
@@ -124,5 +156,12 @@ ul li a:hover i:nth-child(2){
 @media (min-width: 992px){
         #collapsebtn{
                 display: none;
+        }
+        .margin-right{
+                margin-right: 0px;
+        }
+
+        #menu-icon{
+                display : none;
         }
 }
